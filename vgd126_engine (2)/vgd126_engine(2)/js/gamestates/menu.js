@@ -20,7 +20,7 @@ menuBackground.height = canvas.height;
 gameStates[`menu`] = function () {
   // Hover & click
   if (startButton.overlap(mouse)) {
-    if (mouse.pressed) { gameStates.changeState(`level1`)  /*sounds.play(`jump`,loop = true)*/; }
+    if (mouse.pressed) { gameStates.changeState(`level1`)  *sounds.play(`jump`,loop = true)*; }
     startButton.color = `yellow`;
   } else {
     startButton.color = `red`;
